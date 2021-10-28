@@ -1,8 +1,12 @@
 {
-  "scripts": {
-    "start" : "node ."
-  },
+  "name": "hacks-js-proto",
+  "version": "1.0.0",
+  "description": "just some silly proto bot",
+  "author": "hack13 <me@hack13.me>",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "@discordjs/builders": "^0.7.0",
     "@discordjs/rest": "^0.1.0-canary.0",
