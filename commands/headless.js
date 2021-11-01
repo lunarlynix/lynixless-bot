@@ -36,9 +36,9 @@ module.exports = {
 		}
 		let optvalue = interaction.options.getString('option') || 'nothing';
 		if(optvalue == 'nothing'){
-			var uri = `https://neosapi.hack13.cloud/${headless}/${action}`;
+			var uri = `https://${process.env.APISERVER}/${headless}/${action}`;
 		}else{
-			var uri = `https://neosapi.hack13.cloud/${headless}/${action}/${optvalue}`
+			var uri = `https://${process.env.APISERVER}/${headless}/${action}/${optvalue}`
 		}
 		let test = await needle('get', uri, '', headers)
 					.then(function(resp) { return resp.body })
