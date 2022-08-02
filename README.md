@@ -1,4 +1,4 @@
-# Hacks JS Proto
+# Hacks JS Proto t
 
 This is a simple DiscordJS Bot used to manage neos headless servers and my discord servers
 
