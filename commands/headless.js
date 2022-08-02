@@ -35,9 +35,9 @@ module.exports = {
 		}
 		let optvalue = interaction.options.getString('option') || 'nothing';
 		if(optvalue == 'nothing'){
-			var uri = `http://${process.env.APISERVER}/${headless}/${action}`;
+			var uri = `http://${process.env.APISERVER}/${action}/${headless}`;
 		}else{
-			var uri = `http://${process.env.APISERVER}/${headless}/${action}/${optvalue}`
+			var uri = `http://${process.env.APISERVER}/${action}/${headless}/${optvalue}`
 		}
 		let test = await needle('get', uri, '', headers)
 					.then(function(resp) { return resp.body })
