@@ -10,7 +10,7 @@ module.exports = {
 			option.setName('headless')
 				.setDescription('The headless server you want to control')
 				.setRequired(true)
-				.addChoice('Lynixless', 'lynixless-headless')
+				.addChoice('Lynixless', 'lynixless-headless'))
 		.addStringOption(option =>
 			option.setName('action')
 				.setDescription('The action you want to run')
